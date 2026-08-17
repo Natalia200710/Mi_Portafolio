@@ -13,6 +13,7 @@
       <nav>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#actualmente">Actualmente</a>
+        <a href="#evidencias">Evidencias</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#contacto">Contacto</a>
@@ -22,7 +23,6 @@
     <main class="container">
       <!-- HERO / PRESENTACIÓN PRINCIPAL -->
       <section class="hero hero-layout">
-        <!-- Contenedor del Texto (Aprovechando mejor el espacio) -->
         <div class="hero-text-content">
           <span class="badge">Estudiante de Ingeniería de Sistemas</span>
           <h1>¡Hola! 👋 Soy <span class="highlight">Natalia Rodriguez</span></h1>
@@ -35,7 +35,6 @@
           </div>
         </div>
 
-        <!-- Contenedor de la Foto Circular -->
         <div class="hero-image-container">
           <img 
             src="https://github.com/Natalia200710.png" 
@@ -62,11 +61,42 @@
         </ul>
       </section>
 
+      <!-- SECCIÓN BONUS: EVIDENCIAS -->
+      <section id="evidencias" class="section">
+        <h2>📂 Evidencias</h2>
+        <p class="section-desc">Repositorio de trabajos, talleres y ejercicios prácticos desarrollados durante el curso.</p>
+        
+        <div class="grid">
+          <div class="card card-evidencia">
+            <h3>🗄️ SQL</h3>
+            <p>Consultas, diseño de tablas, modelos relacionales y scripts de manipulación de datos (DML/DDL).</p>
+            <span class="status-badge">Próximamente</span>
+          </div>
+
+          <div class="card card-evidencia">
+            <h3>⚙️ PL/SQL Scripts</h3>
+            <p>Procedimientos almacenados, funciones, triggers y bloques anónimos en Oracle / PostgreSQL.</p>
+            <span class="status-badge">Próximamente</span>
+          </div>
+
+          <div class="card card-evidencia">
+            <h3>🍃 NoSQL</h3>
+            <p>Modelado de datos no relacionales, colecciones y operaciones en MongoDB / bases documentales.</p>
+            <span class="status-badge">Próximamente</span>
+          </div>
+
+          <div class="card card-evidencia">
+            <h3>🚀 Proyecto</h3>
+            <p>Entrega principal y documentación del proyecto final de la asignatura de Bases de Datos 2.</p>
+            <span class="status-badge">Próximamente</span>
+          </div>
+        </div>
+      </section>
+
       <!-- PROYECTOS -->
       <section id="proyectos" class="section">
         <h2>📁 Proyectos Destacados</h2>
         <div class="grid">
-          
           <div class="card">
             <h3>PasandoElSemestre</h3>
             <p>Repositorio público enfocado en proyectos de apoyo académico y desarrollo de software.</p>
@@ -84,9 +114,8 @@
               <span>Astro</span>
               <span>HTML / CSS</span>
             </div>
-            <a href="http://localhost:4321/#contacto" target="_blank" class="link">Ver perfil &rarr;</a>
+            <a href="https://github.com/Natalia200710/Mi_Portafolio" target="_blank" class="link">Ver repositorio &rarr;</a>
           </div>
-
         </div>
       </section>
 
@@ -138,7 +167,7 @@
   }
 
   .container {
-    max-width: 1100px; /* Ancho ampliado para mejor distribución */
+    max-width: 1100px;
     margin: 0 auto;
     padding: 2rem 2rem;
   }
@@ -164,7 +193,7 @@
   nav a {
     color: var(--text-secondary);
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
     transition: color 0.2s;
     font-size: 0.95rem;
   }
@@ -173,7 +202,7 @@
     color: var(--text-color);
   }
 
-  /* ESTRUCTURA Y DISTRIBUCIÓN DEL HERO */
+  /* HERO / PRESENTACIÓN */
   .hero-layout {
     display: flex;
     flex-direction: column-reverse;
@@ -189,7 +218,7 @@
       justify-content: space-between;
       align-items: center;
       text-align: left;
-      gap: 4rem; /* Espaciado fluido entre foto y texto */
+      gap: 4rem;
     }
   }
 
@@ -207,7 +236,6 @@
     }
   }
 
-  /* FOTO DE PERFIL CIRCULAR */
   .hero-image-container {
     display: flex;
     justify-content: center;
@@ -225,7 +253,6 @@
     box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);
   }
 
-  /* ELEMENTOS DEL HERO */
   .badge {
     background-color: rgba(56, 189, 248, 0.1);
     color: var(--accent-color);
@@ -238,7 +265,7 @@
   }
 
   h1 {
-    font-size: 3.2rem; /* Tamaño de fuente mayor */
+    font-size: 3.2rem;
     margin: 0 0 1.2rem 0;
     line-height: 1.15;
     font-weight: 800;
@@ -253,7 +280,7 @@
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 2.2rem;
-    max-width: 650px; /* Permite más espacio para las palabras */
+    max-width: 650px;
   }
 
   .hero-buttons {
@@ -302,10 +329,16 @@
     background-color: rgba(255, 255, 255, 0.05);
   }
 
-  /* SECCIONES SECUNDARIAS */
+  /* SECCIONES */
   .section {
     padding: 3.5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .section-desc {
+    color: var(--text-secondary);
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
@@ -325,9 +358,10 @@
     margin-bottom: 1rem;
   }
 
+  /* GRID / TARJETAS */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
   }
@@ -338,6 +372,9 @@
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: border-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .card:hover {
@@ -355,6 +392,17 @@
     color: var(--text-secondary);
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
+  }
+
+  /* EVIDENCIAS */
+  .status-badge {
+    align-self: flex-start;
+    font-size: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
   }
 
   .tags {
