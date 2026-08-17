@@ -1,0 +1,409 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Natalia Rodriguez | Portafolio</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+      <div class="logo">NR</div>
+      <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#actualmente">Actualmente</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- HERO / PRESENTACIÓN PRINCIPAL -->
+      <section class="hero hero-layout">
+        <!-- Contenedor del Texto (Aprovechando mejor el espacio) -->
+        <div class="hero-text-content">
+          <span class="badge">Estudiante de Ingeniería de Sistemas</span>
+          <h1>¡Hola! 👋 Soy <span class="highlight">Natalia Rodriguez</span></h1>
+          <p class="description">
+            Estudiante de Ingeniería de Sistemas en la Universidad El Bosque. Apasionada por el aprendizaje constante y conocer nuevas tecnologías.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary">Contactar</a>
+            <a href="https://github.com/Natalia200710" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Contenedor de la Foto Circular -->
+        <div class="hero-image-container">
+          <img 
+            src="https://github.com/Natalia200710.png" 
+            alt="Foto de perfil de Natalia Rodriguez" 
+            class="hero-image-circular" 
+          />
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="section">
+        <h2>👩‍💻 Sobre mí</h2>
+        <p>
+          Soy estudiante de Ingeniería de Sistemas radicada en Bogotá, Colombia. Actualmente estoy cursando la asignatura de <strong>Bases de Datos 2</strong> y me interesa profundizar mis conocimientos en gestión de bases de datos y desarrollo de nuevas tecnologías.
+        </p>
+      </section>
+
+      <!-- ACTUALMENTE -->
+      <section id="actualmente" class="section">
+        <h2>📚 Actualmente</h2>
+        <ul class="info-list">
+          <li>🌱 <strong>Estoy aprendiendo:</strong> SQL y GitHub.</li>
+          <li>🎯 <strong>Mi objetivo:</strong> Fortalecer mis conocimientos y adquirir experiencia práctica en el área de Bases de Datos.</li>
+        </ul>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="section">
+        <h2>📁 Proyectos Destacados</h2>
+        <div class="grid">
+          
+          <div class="card">
+            <h3>PasandoElSemestre</h3>
+            <p>Repositorio público enfocado en proyectos de apoyo académico y desarrollo de software.</p>
+            <div class="tags">
+              <span>Bases de Datos</span>
+              <span>Java / JS</span>
+            </div>
+            <a href="https://github.com/Natalia200710/PasandoElSemestre" target="_blank" class="link">Ver repositorio &rarr;</a>
+          </div>
+
+          <div class="card">
+            <h3>Portafolio Personal Astro</h3>
+            <p>Sitio web desarrollado con Astro para presentar mi perfil académico, habilidades y proyectos.</p>
+            <div class="tags">
+              <span>Astro</span>
+              <span>HTML / CSS</span>
+            </div>
+            <a href="http://localhost:4321/#contacto" target="_blank" class="link">Ver perfil &rarr;</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HOBBIES -->
+      <section id="hobbies" class="section">
+        <h2>🎵 Hobbies</h2>
+        <div class="skills-list">
+          <span class="skill-tag">🎶 Escuchar música</span>
+          <span class="skill-tag">✈️ Viajar</span>
+          <span class="skill-tag">👩‍👧‍👧 Pasar tiempo en familia</span>
+          <span class="skill-tag">💃 Bailar</span>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section">
+        <h2>📫 Contacto</h2>
+        <p>¿Quieres conectar o colaborar en algún proyecto?</p>
+        <div class="hero-buttons">
+          <a href="https://github.com/Natalia200710" target="_blank" class="btn btn-secondary">GitHub (@Natalia200710)</a>
+          <a href="https://www.instagram.com/natalia_rodriguez.07/" target="_blank" class="btn btn-primary">Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Natalia Rodriguez. Desarrollado con Astro.</p>
+    </footer>
+  </body>
+</html>
+
+<!-- ESTILOS CSS -->
+<style>
+  :root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #38bdf8;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1100px; /* Ancho ampliado para mejor distribución */
+    margin: 0 auto;
+    padding: 2rem 2rem;
+  }
+
+  /* BARRA DE NAVEGACIÓN */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    font-family: monospace;
+  }
+
+  nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.2s;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover {
+    color: var(--text-color);
+  }
+
+  /* ESTRUCTURA Y DISTRIBUCIÓN DEL HERO */
+  .hero-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .hero-layout {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      gap: 4rem; /* Espaciado fluido entre foto y texto */
+    }
+  }
+
+  .hero-text-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .hero-text-content {
+      align-items: flex-start;
+    }
+  }
+
+  /* FOTO DE PERFIL CIRCULAR */
+  .hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .hero-image-circular {
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);
+  }
+
+  /* ELEMENTOS DEL HERO */
+  .badge {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: var(--accent-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 3.2rem; /* Tamaño de fuente mayor */
+    margin: 0 0 1.2rem 0;
+    line-height: 1.15;
+    font-weight: 800;
+  }
+
+  .highlight {
+    color: var(--accent-color);
+  }
+
+  .description {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2.2rem;
+    max-width: 650px; /* Permite más espacio para las palabras */
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .hero-buttons {
+      justify-content: flex-start;
+    }
+  }
+
+  .btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-primary {
+    background-color: var(--accent-color);
+    color: #0f172a;
+    box-shadow: 0 4px 14px 0 rgba(56, 189, 248, 0.3);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 6px 20px 0 rgba(56, 189, 248, 0.4);
+  }
+
+  .btn-secondary {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* SECCIONES SECUNDARIAS */
+  .section {
+    padding: 3.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  .info-list li {
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .card:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+    transform: translateY(-3px);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tags span {
+    font-size: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  .link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .skill-tag {
+    background-color: var(--card-bg);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  footer {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+</style>
