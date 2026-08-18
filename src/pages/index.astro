@@ -44,12 +44,24 @@
         </div>
       </section>
 
-      <!-- SOBRE MÍ -->
+      <!-- SOBRE MÍ CON VIDEO -->
       <section id="sobre-mi" class="section">
         <h2>👩‍💻 Sobre mí</h2>
         <p>
           Soy estudiante de Ingeniería de Sistemas radicada en Bogotá, Colombia. Actualmente estoy cursando la asignatura de <strong>Bases de Datos 2</strong> y me interesa profundizar mis conocimientos en gestión de bases de datos y desarrollo de nuevas tecnologías.
         </p>
+
+        <!-- REPRODUCTOR DE VIDEO RESPONSIVE (CORREGIDO) -->
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/pywEaaAnDuQ" 
+            title="Video sobre mí - Natalia Rodriguez" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </section>
 
       <!-- ACTUALMENTE -->
@@ -345,6 +357,28 @@
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 1.5rem;
+  }
+
+  /* CONTENEDOR DE VIDEO RESPONSIVE (16:9) */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 
   .info-list {
